@@ -1,0 +1,37 @@
+{
+  "name": "test-chatbot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "docker compose up -d && next dev --turbopack -p 5000",
+    "build": "next build",
+    "start": "next start -p 5000",
+    "lint": "next lint",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d",
+    "db:logs": "docker compose logs -f db",
+    "db:migrate": "prisma migrate reset --force",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "^1.0.0",
+    "@google/generative-ai": "^0.24.0",
+    "@xenova/transformers": "^2.17.2",
+    "@prisma/client": "^6.0.0",
+    "dotenv": "^16.0.0",
+    "dotenv-expand": "^11.0.0",
+    "next": "^15.0.0",
+    "pdf-parse": "^1.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "prisma": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}
