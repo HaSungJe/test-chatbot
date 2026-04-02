@@ -8,7 +8,7 @@
 
 | 항목 | 기술 |
 |---|---|
-| 프레임워크 | Next.js 15 (App Router) |
+| 프레임워크 | Next.js 16 (App Router) |
 | AI 모델 | Google Gemini `gemini-2.0-flash` |
 | 임베딩 | `@xenova/transformers` 로컬 모델 (무료, 오프라인) |
 | 벡터 DB | PostgreSQL + pgvector |
